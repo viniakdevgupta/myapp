@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import './styles/home.scss'
 
 function Home(props) {
-
     const [user,setUser] = useState('');
     
     useEffect(()=>{
@@ -17,6 +16,9 @@ function Home(props) {
         <>
             <div style={{display:'flex',flexDirection:'column' ,justifyContent:'center',alignItems:'center',height:'300px'}}>
                 <h2>Welcome! {user.email}</h2>
+                <Link to='/users'>
+                    Click here to View Users!
+                </Link>
             </div>
         </> : 
         <>

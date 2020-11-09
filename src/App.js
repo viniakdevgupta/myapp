@@ -8,6 +8,8 @@ import {
 // importing screens
 import Home from "./containers/Home";
 import Login from "./containers/Login";
+import Users from "./containers/Users";
+
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           </Route>
           <Route exact path="/home" render={(props) => <Home {...props} />} />
           <Route exact path="/login" render={(props) => <Login {...props} />} />
+          <Route exact path="/users" render={(props) => <Users {...props} />} />
+
         </Switch>
       </Suspense>
     </Router>
